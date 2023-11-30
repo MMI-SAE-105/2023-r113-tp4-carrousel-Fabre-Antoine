@@ -70,13 +70,25 @@ img {
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;}
+    align-items: center;
+    background-color: #e8e5e5 ;
+}
 .caroussel_lien {
     text-decoration: none;
-    color: #000;
-    padding: 0.5rem;
-    border: 1px solid #000;
+    color: #fff;
+    padding: 10px;
     border-radius: 0.5rem;
+    background-color: blue;
+}
+.caroussel_lien.actif {
+    background-color: #000;}
+li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+figcaption {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
     </style>
 </head>
@@ -132,11 +144,11 @@ body {
             </div>
         </div>
         <ul class="caroussel_liste-liens">
-            <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}">ecran 1</a></li>
-            <li><a href="#ecran-2" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-2'}">ecran 2</a></li>
-            <li><a href="#ecran-3" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-3'}">ecran 3</a></li>
-            <li><a href="#ecran-4" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-4'}">ecran 4</a></li>
-            <li><a href="#ecran-5" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-5'}">ecran 5</a></li>
+            <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}">Écran 1</a></li>
+            <li><a href="#ecran-2" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-2'}">Écran 2</a></li>
+            <li><a href="#ecran-3" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-3'}">Écran 3</a></li>
+            <li><a href="#ecran-4" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-4'}">Écran 4</a></li>
+            <li><a href="#ecran-5" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-5'}">Écran 5</a></li>
         </ul>
     </div>   
 </body>
