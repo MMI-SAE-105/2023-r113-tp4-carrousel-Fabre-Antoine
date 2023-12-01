@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="//unpkg.com/alpinejs" defer></script>
+    <meta name="viewport" content="width=device-width" />
     <style>
 * {
  box-sizing: border-box;/* change le box model */
@@ -14,7 +15,7 @@ img {
    height:auto;/* hauteur "auto" */
 }
 .carrousel_parent-ecrans {
-   display: flex;/* aligne horizontalement les enfants */
+  display: flex;/* aligne horizontalement les enfants */
   width:100%;/* largeur du parent */
   overflow-x: scroll; /* permet de scroller horizontalement */
   scroll-behavior: smooth; /* animation de défilement */
@@ -69,6 +70,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .caroussel_lien {
     text-decoration: none;
@@ -100,7 +102,9 @@ h1 {
     text-decoration: underline;
 }
 .caroussel_lien:hover {
-    background-color: blue;}  
+    background-color: blue;
+}  
+
 
     </style>
 </head>
